@@ -22,8 +22,8 @@ export default function Btwin() {
       </div>
       <div class="container-fluid mt-1 pt-4">
         <div class="row">
-          <div class="col-2"></div>
-          <div class="col-2">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Btwin/100-bike-multitool.avif"
@@ -91,7 +91,7 @@ export default function Btwin() {
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Btwin/kids-cycle-2-in-1-horn-and-bell-yellow.avif"
@@ -159,7 +159,7 @@ export default function Btwin() {
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Btwin/kids-cycling-mudguard-for-20-inch-wheel-size.avif"
@@ -227,7 +227,7 @@ export default function Btwin() {
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Btwin/mountain-bike-rockrider-st30-graphite-grey.avif"

@@ -40,7 +40,7 @@ export default function Contact() {
           <p>Let's talk about your thoughts </p>
         </div>
         <div class="row mt-4">
-          <div class="col-2"></div>
+          <div class="col-sm-2"></div>
           <div class="col">
             <input
               class="form-control"
@@ -65,10 +65,10 @@ export default function Contact() {
               aria-label="default input example"
             />
           </div>
-          <div class="col-2"></div>
+          <div class="col-sm-2"></div>
         </div>
         <div class="row mt-3">
-          <div class="col-2 "></div>
+          <div class="col-sm-2 "></div>
           <div class="col">
             <input
               class="form-control"
@@ -77,11 +77,11 @@ export default function Contact() {
               style={padm}
             />
           </div>
-          <div class="col-2"></div>
+          <div class="col-sm-2"></div>
         </div>
         <div className="container text-center pt-3">
           <div class="row  ">
-            <div class="col-9"></div>
+            <div class="col-sm-9"></div>
             <div class="col d-flex justify-content-end">
               <button
                 class="btn"
