@@ -4,19 +4,6 @@ export default function Login() {
   return (
     <>
       <div>
-        <nav className="navbar">
-          <div className="container-fluid d-flex justify-content-center">
-            <a className="navbar-brand" href="/">
-              <img
-                src="Img/Decathlon-Logo-New.png"
-                width="165"
-                height="45"
-                alt="DecathlonLogo"
-                className="d-inline-block align-text-top"
-              />
-            </a>
-          </div>
-        </nav>
         <div className="container-flex">
           <div className="row">
             <div className="col">
@@ -37,12 +24,21 @@ export default function Login() {
                       <h3>Login</h3>
                       <p>Go to your decathlon account here</p>
                       <div className="mb-3">
-                        <label
-                          for="formGroupExampleInput"
-                          className="form-label"
-                        >
-                          Enter your email address
-                        </label>
+                        <div className="DisplayFlex">
+                          <label
+                            for="formGroupExampleInput"
+                            className="form-label"
+                          >
+                            Enter your email address |
+                          </label>
+                          <label
+                            for="formGroupExampleInput"
+                            className="form-label"
+                          >
+                            | Enter your phone number
+                          </label>
+                        </div>
+
                         <input
                           type="text"
                           className="form-control"

@@ -1,4 +1,4 @@
-input[type="text"] {
+input[type="text1"] {
   width: 120px;
   height: 35px;
   box-sizing: border-box;
@@ -28,19 +28,25 @@ input[type="text"] {
   display: block;
 }
 .SmallBlack {
-  height: 30px;
+  height: 35px; /* Example height */
   background-color: #1f1f1f;
   color: white;
-  /* text-align: center; */
 }
+
 .SmallBlackHeight {
   display: flex;
   justify-content: center;
+  padding-top: 8px;
 }
-/* .container {
+.SmallBlackLeft {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  border: 1px solid #000;
-} */
+  justify-content: end;
+  padding-top: 8px;
+}
+.DisplayFlex {
+  display: flex;
+}
+.PadLeft {
+  padding-left: 5px;
+  padding-right: 10px;
+}

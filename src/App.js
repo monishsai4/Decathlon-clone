@@ -16,58 +16,53 @@ export default function App() {
   };
   return (
     <>
-      <div className="container-fluid SmallBlack ">
-        <p className="SmallBlackHeight">Free Shipping | Click and Collect</p>
+      <div class="container-fluid SmallBlack">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <p className="SmallBlackHeight">
+              Free Shipping | Click and Collect
+            </p>
+          </div>
+          <div class="col SmallBlackLeft">
+            <img src="Img/Male.png" alt="Male" width="18px" height="18px" />
+
+            <p className="PadLeft">
+              <Link to="/Login" className="nav-link">
+                SignIn
+              </Link>
+            </p>
+          </div>
+        </div>
       </div>
+
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
             <ul class="navbar-nav  mb-2 mb-lg-0" style={Color}>
               <li class="nav-item me-5">
-                <Link to="/" className="nav-link ">
-                  Home
+                <Link to="/Kiprun" className="nav-link">
+                  Running
                 </Link>
               </li>
-              <li class="nav-item me-5 dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="/"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                >
-                  Products
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <Link to="/Kiprun" className="dropdown-item">
-                      Kiprun
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/Domyos" className="dropdown-item">
-                      Domyos
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/Quechua" className="dropdown-item">
-                      Quechua
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/Btwin" className="dropdown-item">
-                      Btwin
-                    </Link>
-                  </li>
-                </ul>
+              <li class="nav-item me-5">
+                <Link to="/Domyos" className="nav-link">
+                  Lifting
+                </Link>
+              </li>
+              <li class="nav-item me-5">
+                <Link to="/Quechua" className="nav-link">
+                  Hiking
+                </Link>
+              </li>
+              <li class="nav-item me-5">
+                <Link to="/Btwin" className="nav-link">
+                  Cycling
+                </Link>
               </li>
               <li class="nav-item me-5">
                 <Link to="/Contact" className="nav-link">
                   ContactUs
-                </Link>
-              </li>
-              <li class="nav-item me-1">
-                <Link to="/Login" className="nav-link">
-                  SignIn
                 </Link>
               </li>
             </ul>
@@ -93,7 +88,7 @@ export default function App() {
           <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 LeftMe">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <input type="text" class="SearchBar" placeholder="Search" />
+                <input type="text1" class="SearchBar" placeholder="Search" />
               </li>
               <li class="nav-item">
                 {" "}
