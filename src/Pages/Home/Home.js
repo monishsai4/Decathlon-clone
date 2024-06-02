@@ -12,8 +12,9 @@ export default function App() {
   return (
     <div>
       <UpperC />
-      <Carousal />
       <FourCards />
+      <Carousal />
+
       <SecondC />
       <Carousal1 />
       <Recommend />

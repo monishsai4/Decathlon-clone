@@ -22,8 +22,8 @@ export default function Kiprun() {
       </div>
       <div class="container-fluid mt-1 pt-4">
         <div class="row">
-          <div class="col-2"></div>
-          <div class="col-2">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Kiprun/kiprun-kn500-flexible-grip-high-comfort-women-running-shoes-for-marathon-grey.avif"
@@ -93,7 +93,7 @@ export default function Kiprun() {
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Kiprun/kiprun-run-500-women-s-breathable-running-t-shirt-purple.avif"
@@ -161,7 +161,7 @@ export default function Kiprun() {
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Kiprun/men-s-kiprun-run-500-comfort-seamless-running-t-shirt-light-orange.avif"
@@ -233,7 +233,7 @@ export default function Kiprun() {
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Kiprun/men-s-running-long-sleeved-t-shirt-anti-uv-kiprun-dry-500-uv-light-blue.avif"

@@ -8,37 +8,21 @@ import Btwin from "./Pages/Product/Btwin";
 import Quechua from "./Pages/Product/Quechua";
 import Kiprun from "./Pages/Product/Kiprun";
 import Domyos from "./Pages/Product/Domyos";
+import "./App.css";
 
 export default function App() {
+  const Color = {
+    color: "black",
+  };
   return (
     <>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container d-flex justify-content-between align-items-center">
-          <a class="navbar-brand" href="/">
-            <img
-              src="Img/Decathlon-Logo-New.png"
-              width="165"
-              height="45"
-              alt="DecathlonLogo"
-            />
-          </a>
-          {/* <div class="d-flex flex-grow-1 justify-content-center me-5">
-            <h5 class="navbar-heading me-5"></h5>
-          </div> */}
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div className="container-fluid SmallBlack ">
+        <p className="SmallBlackHeight">Free Shipping | Click and Collect</p>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav  mb-2 mb-lg-0" style={Color}>
               <li class="nav-item me-5">
                 <Link to="/" className="nav-link ">
                   Home
@@ -87,22 +71,37 @@ export default function App() {
                 </Link>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-3"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                style={customSearchInputStyle}
+          </div>
+          <div class="mx-auto order-0">
+            <a class="navbar-brand" href="/">
+              <img
+                src="Img/Decathlon-Logo-New.png"
+                width="165"
+                height="45"
+                alt="DecathlonLogo"
               />
-              <button
-                class="btn btn-outline-success me-5"
-                type="submit"
-                style={customSearchButtonStyle}
-              >
-                Search
-              </button>
-            </form>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target=".dual-collapse2"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 LeftMe">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <input type="text" class="SearchBar" placeholder="Search" />
+              </li>
+              <li class="nav-item">
+                {" "}
+                <button class="btn  btn-img">
+                  <img src="Img/Bag.png" alt="Button" width="10" height="10" />
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -119,12 +118,3 @@ export default function App() {
     </>
   );
 }
-
-const customSearchInputStyle = {
-  width: "270px", // Adjust the width as needed
-  height: "43px",
-};
-const customSearchButtonStyle = {
-  width: "80px", // Adjust the width as needed
-  height: "42px",
-};

@@ -21,8 +21,8 @@ export default function Quechua() {
       </div>
       <div class="container-fluid mt-1 pt-4">
         <div class="row">
-          <div class="col-2"></div>
-          <div class="col-2">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Quechua/2-person-camping-tent-mh100-grey.avif"
@@ -90,7 +90,7 @@ export default function Quechua() {
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Quechua/hiking-backpack-30l-nh-arpenaz-500.avif"
@@ -162,7 +162,7 @@ export default function Quechua() {
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Quechua/men-hiking-quick-dry-t-shirt-mh500-blue.avif"
@@ -232,7 +232,7 @@ export default function Quechua() {
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Quechua/men-s-rapid-hiking-shorts-fh-900-storm-blue.avif"

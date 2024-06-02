@@ -3,7 +3,14 @@ import React from "react";
 export default function UpperC() {
   return (
     <div>
-      <div class="container text-center mt-5 mb-4">
+      <div className="container-flex">
+        <img
+          src="Img/24-Spring-HP-Banners-Duffels-Desktop_1440x526.webp"
+          alt="Wallpaper"
+          width="100%"
+        />
+      </div>
+      {/* <div class="container text-center mt-5 mb-4">
         <div class="row">
           <div class="col">
             <img src="Img/Frame 427321149.avif" alt="IMG!" width="100px" />
@@ -45,7 +52,7 @@ export default function UpperC() {
             <p>Kids</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

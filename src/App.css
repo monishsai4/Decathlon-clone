@@ -1,0 +1,46 @@
+input[type="text"] {
+  width: 120px;
+  height: 35px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  background-color: white;
+  background-image: url("F:\WebDevelopment\REACT\decathlon-clone\public\Img/Search.png");
+  background-size: 17px 17px;
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 30px;
+}
+.LeftMe {
+  justify-content: end;
+}
+.btn-img {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0;
+  border: none;
+}
+
+.btn-img img {
+  width: 35px;
+  height: 35px;
+  display: block;
+}
+.SmallBlack {
+  height: 30px;
+  background-color: #1f1f1f;
+  color: white;
+  /* text-align: center; */
+}
+.SmallBlackHeight {
+  display: flex;
+  justify-content: center;
+}
+/* .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border: 1px solid #000;
+} */

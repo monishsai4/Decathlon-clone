@@ -22,8 +22,8 @@ export default function Domyos() {
       </div>
       <div class="container-fluid mt-1 pt-4">
         <div class="row">
-          <div class="col-2"></div>
-          <div class="col-2">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Domyos/bodybuilding-gallon-bottle-22l-grey.avif"
@@ -95,7 +95,7 @@ export default function Domyos() {
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Domyos/men-gym-shorts-polyester-fst-100-black.avif"
@@ -167,7 +167,7 @@ export default function Domyos() {
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Domyos/men-s-shorts-for-gym-cotton-rich-500-khaki.avif"
@@ -237,7 +237,7 @@ export default function Domyos() {
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-sm-2">
             <div class="card">
               <img
                 src="img/Domyos/men-tshirt-long-sleeve-regular-fit-100-for-gym-grey.avif"
