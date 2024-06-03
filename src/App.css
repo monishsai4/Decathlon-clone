@@ -30,9 +30,13 @@ input[type="text1"] {
 .SmallBlack {
   height: 35px; /* Example height */
   background-color: #1f1f1f;
-  color: white;
+  color: whitesmoke;
 }
-
+.BigBlack {
+  height: 100%;
+  background-color: #1f1f1f;
+  color: whitesmoke;
+}
 .SmallBlackHeight {
   display: flex;
   justify-content: center;
@@ -46,7 +50,41 @@ input[type="text1"] {
 .DisplayFlex {
   display: flex;
 }
+.DisplayPadding {
+  margin-left: 10px;
+}
 .PadLeft {
   padding-left: 5px;
   padding-right: 10px;
+}
+.ULME {
+  list-style-type: none; /* Optional: removes default margin */
+}
+.OLME {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: small;
+  font-weight: 500;
+}
+.GiveW {
+  font-weight: 700;
+}
+.input-container1 {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text2"] {
+  border: none solid #ccc;
+  padding: 9px;
+  flex: 1;
+}
+
+.submitButton {
+  background-color: #3543ba;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: small;
 }

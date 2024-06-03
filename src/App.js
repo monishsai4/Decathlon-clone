@@ -9,6 +9,9 @@ import Quechua from "./Pages/Product/Quechua";
 import Kiprun from "./Pages/Product/Kiprun";
 import Domyos from "./Pages/Product/Domyos";
 import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 export default function App() {
   const Color = {
@@ -35,11 +38,29 @@ export default function App() {
           </div>
         </div>
       </div>
-
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-          <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-            <ul class="navbar-nav  mb-2 mb-lg-0" style={Color}>
+          <a class="navbar-brand" href="/">
+            <img
+              src="Img/Decathlon-Logo-New.png"
+              width="165"
+              height="45"
+              alt="DecathlonLogo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item me-5">
                 <Link to="/Kiprun" className="nav-link">
                   Running
@@ -66,26 +87,6 @@ export default function App() {
                 </Link>
               </li>
             </ul>
-          </div>
-          <div class="mx-auto order-0">
-            <a class="navbar-brand" href="/">
-              <img
-                src="Img/Decathlon-Logo-New.png"
-                width="165"
-                height="45"
-                alt="DecathlonLogo"
-              />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target=".dual-collapse2"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 LeftMe">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <input type="text1" class="SearchBar" placeholder="Search" />

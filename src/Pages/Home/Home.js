@@ -14,7 +14,6 @@ export default function App() {
       <UpperC />
       <FourCards />
       <Carousal />
-
       <SecondC />
       <Carousal1 />
       <Recommend />

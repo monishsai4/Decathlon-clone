@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "../../Components/Footer";
 import "./style.css";
 
 export default function Kiprun() {
@@ -20,13 +21,13 @@ export default function Kiprun() {
           <p>Welcome you to the running section</p>
         </div>
       </div>
-      <div class="container-fluid mt-1 pt-4">
+      <div class="container-fluid mt-1 pt-4 pb-4">
         <div class="row">
           <div class="col-sm-2"></div>
           <div class="col-sm-2">
             <div class="card">
               <img
-                src="img/Kiprun/kiprun-kn500-flexible-grip-high-comfort-women-running-shoes-for-marathon-grey.avif"
+                src="Img/kiprun-kn500-flexible-grip-high-comfort-women-running-shoes-for-marathon-grey.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -48,7 +49,7 @@ export default function Kiprun() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Kiprun/kiprun-unisex-running-neck-warmer-multi-function-headband-black-grey.avif"
+                src="Img/kiprun-unisex-running-neck-warmer-multi-function-headband-black-grey.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -70,7 +71,7 @@ export default function Kiprun() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Kiprun/men-s-running-shorts-kiprun-run-500-dry-dark-green-grey.avif"
+                src="Img/men-s-running-shorts-kiprun-run-500-dry-dark-green-grey.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -96,7 +97,7 @@ export default function Kiprun() {
           <div class="col-sm-2">
             <div class="card">
               <img
-                src="img/Kiprun/kiprun-run-500-women-s-breathable-running-t-shirt-purple.avif"
+                src="Img/kiprun-run-500-women-s-breathable-running-t-shirt-purple.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -118,7 +119,7 @@ export default function Kiprun() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Kiprun/kiprun-warm-unisex-warm-running-headband-light-grey.avif"
+                src="Img/kiprun-warm-unisex-warm-running-headband-light-grey.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -140,7 +141,7 @@ export default function Kiprun() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Kiprun/men-s-running-tight-shorts-kiprun-run-100-black.avif"
+                src="Img/men-s-running-tight-shorts-kiprun-run-100-black.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -164,7 +165,7 @@ export default function Kiprun() {
           <div class="col-sm-2">
             <div class="card">
               <img
-                src="img/Kiprun/men-s-kiprun-run-500-comfort-seamless-running-t-shirt-light-orange.avif"
+                src="Img/men-s-kiprun-run-500-comfort-seamless-running-t-shirt-light-orange.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -186,7 +187,7 @@ export default function Kiprun() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Kiprun/men-s-running-breathable-t-shirt-kiprun-run-500-dry-graph-beige.avif"
+                src="Img/men-s-running-breathable-t-shirt-kiprun-run-500-dry-graph-beige.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -210,7 +211,7 @@ export default function Kiprun() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Kiprun/unisex-running-2x250ml-bottle-hydration-belt-kiprun-belt-500.avif"
+                src="Img/unisex-running-2x250ml-bottle-hydration-belt-kiprun-belt-500.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -236,7 +237,7 @@ export default function Kiprun() {
           <div class="col-sm-2">
             <div class="card">
               <img
-                src="img/Kiprun/men-s-running-long-sleeved-t-shirt-anti-uv-kiprun-dry-500-uv-light-blue.avif"
+                src="Img/men-s-running-long-sleeved-t-shirt-anti-uv-kiprun-dry-500-uv-light-blue.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -260,7 +261,7 @@ export default function Kiprun() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Kiprun/men-s-running-shorts-kiprun-run-100-black.avif"
+                src="Img/men-s-running-shorts-kiprun-run-100-black.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -282,7 +283,7 @@ export default function Kiprun() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Kiprun/unisex-running-visor-kiprun-adjustable-black.avif"
+                src="Img/unisex-running-visor-kiprun-adjustable-black.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -306,6 +307,7 @@ export default function Kiprun() {
           <div class="col-1"></div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

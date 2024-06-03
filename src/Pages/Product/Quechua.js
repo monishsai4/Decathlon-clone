@@ -1,4 +1,6 @@
 import React from "react";
+import Footer from "../../Components/Footer";
+
 import "./style.css";
 
 export default function Quechua() {
@@ -19,13 +21,13 @@ export default function Quechua() {
           <p>Welcome you to the hiking section</p>
         </div>
       </div>
-      <div class="container-fluid mt-1 pt-4">
+      <div class="container-fluid mt-1 pt-4 pb-4">
         <div class="row">
           <div class="col-sm-2"></div>
           <div class="col-sm-2">
             <div class="card">
               <img
-                src="img/Quechua/2-person-camping-tent-mh100-grey.avif"
+                src="Img/2-person-camping-tent-mh100-grey.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -47,7 +49,7 @@ export default function Quechua() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Quechua/adult-hiking-sunglasses-mh100-category-3.avif"
+                src="Img/adult-hiking-sunglasses-mh100-category-3.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -69,7 +71,7 @@ export default function Quechua() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Quechua/camping-tent-2-seconds-2-person.avif"
+                src="Img/camping-tent-2-seconds-2-person.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -93,7 +95,7 @@ export default function Quechua() {
           <div class="col-sm-2">
             <div class="card">
               <img
-                src="img/Quechua/hiking-backpack-30l-nh-arpenaz-500.avif"
+                src="Img/hiking-backpack-30l-nh-arpenaz-500.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -115,7 +117,7 @@ export default function Quechua() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Quechua/large-deck-snowshoes-quechua-easy-sh100-mountain-l (1).avif"
+                src="Img/large-deck-snowshoes-quechua-easy-sh100-mountain-l (1).avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -139,7 +141,7 @@ export default function Quechua() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Quechua/women-winter-jacket-for-hiking-sh500-10c-burgundy.avif"
+                src="Img/women-winter-jacket-for-hiking-sh500-10c-burgundy.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -165,7 +167,7 @@ export default function Quechua() {
           <div class="col-sm-2">
             <div class="card">
               <img
-                src="img/Quechua/men-hiking-quick-dry-t-shirt-mh500-blue.avif"
+                src="Img/men-hiking-quick-dry-t-shirt-mh500-blue.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -187,7 +189,7 @@ export default function Quechua() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Quechua/men-lightweight-low-ankle-hiking-shoes-grey-nh100.avif"
+                src="Img/men-lightweight-low-ankle-hiking-shoes-grey-nh100.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -211,7 +213,7 @@ export default function Quechua() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Quechua/men-slim-fit-cargo-pant-grey.avif"
+                src="Img/men-slim-fit-cargo-pant-grey.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -235,7 +237,7 @@ export default function Quechua() {
           <div class="col-sm-2">
             <div class="card">
               <img
-                src="img/Quechua/men-s-rapid-hiking-shorts-fh-900-storm-blue.avif"
+                src="Img/men-s-rapid-hiking-shorts-fh-900-storm-blue.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -257,7 +259,7 @@ export default function Quechua() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Quechua/men-waterproof-hiking-shoes-mh100-khaki.avif"
+                src="Img/men-waterproof-hiking-shoes-mh100-khaki.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -279,7 +281,7 @@ export default function Quechua() {
             </div>
             <div class="card mt-4">
               <img
-                src="img/Quechua/women-water-resistant-mid-ankle-hiking-shoes-blue-grey-nh150.avif"
+                src="Img/women-water-resistant-mid-ankle-hiking-shoes-blue-grey-nh150.avif"
                 class="card-img-top"
                 alt="..."
               />
@@ -305,6 +307,7 @@ export default function Quechua() {
           <div class="col-1"></div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
