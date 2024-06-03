@@ -1,3 +1,5 @@
+click on the link below to view the live running webpage 
+https://decathlon-clone-207bf.web.app/
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
