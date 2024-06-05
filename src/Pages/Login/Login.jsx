@@ -6,7 +6,7 @@ export default function Login() {
       <div>
         <div className="container-flex">
           <div className="row">
-            <div className="col">
+            <div className="col-md">
               <img
                 src="Img/Loginf1.avif"
                 height="120%"
@@ -15,12 +15,12 @@ export default function Login() {
                 className="d-inline-block align-text-top"
               />
             </div>
-            <div className="col">
+            <div className="col-md">
               <div className="container">
                 <div className="container mt-5">
                   <div className="row">
-                    <div className="col-2"></div>
-                    <div className="col-8">
+                    <div className="col-md-2"></div>
+                    <div className="col-md-8">
                       <h3>Login</h3>
                       <p>Go to your decathlon account here</p>
                       <div className="mb-3">
@@ -103,7 +103,7 @@ export default function Login() {
                         <u>Create your DECATHLON account</u>
                       </p>
                     </div>
-                    <div className="col-2"></div>
+                    <div className="col-md-2"></div>
                   </div>
                 </div>
               </div>

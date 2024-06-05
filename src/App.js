@@ -8,22 +8,20 @@ import Btwin from "./Pages/Product/Btwin";
 import Quechua from "./Pages/Product/Quechua";
 import Kiprun from "./Pages/Product/Kiprun";
 import Domyos from "./Pages/Product/Domyos";
+
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
 export default function App() {
-  const Color = {
-    color: "black",
-  };
   return (
     <>
       <div class="container-fluid SmallBlack">
         <div class="row">
           <div class="col"></div>
           <div class="col">
-            <p className="SmallBlackHeight">
+            <p className="SmallBlackHeight one-line-only">
               Free Shipping | Click and Collect
             </p>
           </div>

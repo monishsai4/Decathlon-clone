@@ -32,6 +32,12 @@ input[type="text1"] {
   background-color: #1f1f1f;
   color: whitesmoke;
 }
+.one-line-only {
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
+  overflow: hidden; /* Ensures overflow text is hidden */
+  text-overflow: ellipsis; /* Adds ellipsis (...) to indicate truncated text */
+}
+
 .BigBlack {
   height: 100%;
   background-color: #1f1f1f;
