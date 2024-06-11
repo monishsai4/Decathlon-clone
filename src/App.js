@@ -92,7 +92,14 @@ export default function App() {
               <li class="nav-item">
                 {" "}
                 <button class="btn  btn-img">
-                  <img src="Img/Bag.png" alt="Button" width="10" height="10" />
+                  <Link to="/Cart">
+                    <img
+                      src="Img/Bag.png"
+                      alt="Button"
+                      width="10"
+                      height="10"
+                    />
+                  </Link>
                 </button>
               </li>
             </ul>

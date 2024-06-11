@@ -1,0 +1,26 @@
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Imgme {
+  opacity: 0.9;
+}
+.TextColor {
+  color: white;
+  font-size: 30px;
+}
+.COlor {
+  color: white;
+}
+.btn-prim {
+  background-color: white;
+  color: #333333;
+  border: none;
+  padding: 8px 12px 8px 12px;
+}
+.btn-prim:hover {
+  background-color: #333333;
+  color: white;
+}

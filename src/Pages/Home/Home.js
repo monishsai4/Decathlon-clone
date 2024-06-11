@@ -2,7 +2,6 @@ import Carousal from "../../Components/Carousel";
 import UpperC from "../../Components/UpperC";
 import FourCards from "../../Components/FourCards";
 import SecondC from "../../Components/SecondC";
-import Carousal1 from "../../Components/Carousel1";
 import Recommend from "../../Components/Recommend";
 import Slott from "../../Components/Slott";
 import Footer from "../../Components/Footer";
@@ -15,7 +14,6 @@ export default function App() {
       <FourCards />
       <Carousal />
       <SecondC />
-      <Carousal1 />
       <Recommend />
       <Slott />
       <Footer />
