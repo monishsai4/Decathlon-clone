@@ -1,11 +1,12 @@
 import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
 
-import Signup from "./Signup";
+import Login from "./Login";
 
-export default function Login() {
+export default function Signup() {
   return (
     <>
+      <h1>Hello</h1>
       <div>
         <div className="container-flex">
           <div className="row">
@@ -24,8 +25,8 @@ export default function Login() {
                   <div className="row">
                     <div className="col-md-2"></div>
                     <div className="col-md-8">
-                      <h3>Login</h3>
-                      <p>Go to your decathlon account here</p>
+                      <h3>SignUp</h3>
+                      <p>Create your decathlon account here</p>
                       <div class="container-flex">
                         <div class="row">
                           <div class="col">
@@ -47,7 +48,7 @@ export default function Login() {
                               for="formGroupExampleInput"
                               className="form-label"
                             >
-                              Enter your Password
+                              Enter your new Password
                             </label>
                             <input
                               type="Password"
@@ -112,12 +113,11 @@ export default function Login() {
                           alt="Google"
                         />
                       </button>
-                      <h6 className="mt-4">No account? Create one!</h6>
+                      <h6 className="mt-4">Existing account? Login!</h6>
                       <p className="mt-4">
                         <u>
-                          <Link to="/Signup">
-                            Create your DECATHLON account
-                          </Link>
+                          {" "}
+                          <Link to="/Login">Login your DECATHLON account</Link>
                         </u>
                       </p>
                     </div>
@@ -130,7 +130,7 @@ export default function Login() {
         </div>
       </div>
       <Routes>
-        <Route path="/Signup" element={<Signup />} />
+        <Route path="/Login" element={<Login />} />
       </Routes>
     </>
   );

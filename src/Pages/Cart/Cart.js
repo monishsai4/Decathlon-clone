@@ -1,9 +1,8 @@
 import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
-
 import Footer from "../../Components/Footer";
+import { Link } from "react-router-dom";
+
 import "./Cart.css";
-import Home from "../Home/Home";
 
 export default function Cart() {
   return (
@@ -22,7 +21,7 @@ export default function Cart() {
                   </div>
                   <div class="col-md-5">
                     <Link to="/">
-                      <button class=" btn-fill">CONTINUE SHOPPING</button>
+                      <button class=" btn-fill">Continue shopping</button>
                     </Link>
                   </div>
                 </div>
@@ -34,9 +33,6 @@ export default function Cart() {
       </div>
 
       <Footer />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
     </>
   );
 }

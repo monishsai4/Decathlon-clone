@@ -64,16 +64,21 @@ export default function Footer() {
         <div class="col">
           <div className="DisplayFlex">
             <div className="DisplayPadding">
-              <img src="Img/I1.png" width="26px" height="26px" />
+              <img
+                src="Img/I1.png"
+                width="26px"
+                height="26px"
+                alt="instagram"
+              />
             </div>
             <div className="DisplayPadding">
-              <img src="Img/F1.png" width="26px" height="26px" />
+              <img src="Img/F1.png" width="26px" height="26px" alt="facebook" />
             </div>
             <div className="DisplayPadding">
-              <img src="Img/T1.png" width="26px" height="26px" />
+              <img src="Img/T1.png" width="26px" height="26px" alt="twitter" />
             </div>
             <div className="DisplayPadding">
-              <img src="Img/Y1.png" width="26px" height="26px" />
+              <img src="Img/Y1.png" width="26px" height="26px" alt="youtube" />
             </div>
             <div className="DisplayPadding">
               <p>

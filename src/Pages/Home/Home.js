@@ -7,7 +7,7 @@ import Slott from "../../Components/Slott";
 import Footer from "../../Components/Footer";
 import React from "react";
 
-export default function App() {
+export default function Home() {
   return (
     <div>
       <UpperC />

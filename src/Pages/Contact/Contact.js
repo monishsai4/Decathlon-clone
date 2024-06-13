@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../../Components/Footer";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  // Using samefile styles
   const Carousme = {
     backgroundColor: "#3543BA",
     width: "100%",
@@ -20,11 +22,40 @@ export default function Contact() {
   const padm = {
     height: "200px",
   };
-
+  //  Using emailjs for email submittion initialising the function
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+  const [message, setMessage] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const serviceId = "service_lcvl9kt";
+    const publicId = "template_arxqe6n";
+    const publicKey = "a8ENFXD7P58DsU2yn";
+    const templateParams = {
+      from_name: name,
+      from_phone: number,
+      from_email: email,
+      message: message,
+      to_name: "Decathlon",
+    };
+    emailjs
+      .send(serviceId, publicId, templateParams, publicKey)
+      .then((response) => {
+        console.log("email sent successfully", response);
+        setEmail("");
+        setMessage("");
+        setName("");
+        setNumber("");
+      })
+      .catch((error) => {
+        console.error("Error sending email", error);
+      });
+  };
   return (
     <>
       <div
-        class="container-fluid d-flex justify-content-center align-items-center"
+        className="container-fluid d-flex justify-content-center align-items-center"
         style={Carousme}
       >
         <div className="text-center">
@@ -32,67 +63,77 @@ export default function Contact() {
           <p>Drop in us a message</p>
         </div>
       </div>
-      <div class="container-fluid text-center" style={MainDiv}>
+      <div className="container-fluid text-center" style={MainDiv}>
         <div className="text-center mt-5">
           <h2>Get in Touch</h2>
         </div>
         <div className="text-center mt-3">
           <p>Let's talk about your thoughts </p>
         </div>
-        <div class="row mt-4">
-          <div class="col-2"></div>
-          <div class="col-md">
+        <div className="row mt-4">
+          <div className="col-2"></div>
+
+          <div className="col-md">
             <input
-              class="form-control"
+              className="form-control"
               type="text"
               placeholder="Your name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               aria-label="default input example"
             />
           </div>
-          <div class="col-md">
+          <div className="col-md">
             <input
-              class="form-control"
-              type="text"
+              className="form-control"
+              type="number"
+              value={number}
+              onChange={(e) => setNumber(e.target.value)}
               placeholder="Your phone number"
               aria-label="default input example"
             />
           </div>
-          <div class="col-md">
+          <div className="col-md">
             <input
-              class="form-control"
-              type="text"
+              className="form-control"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="Your email"
               aria-label="default input example"
             />
           </div>
-          <div class="col-md-2"></div>
+          <div className="col-md-2"></div>
         </div>
-        <div class="row mt-3">
-          <div class="col-md-2 "></div>
-          <div class="col-md">
+        <div className="row mt-3">
+          <div className="col-md-2 "></div>
+          <div className="col-md">
             <input
-              class="form-control"
+              className="form-control"
               type="text"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               placeholder="Your message"
               style={padm}
             />
           </div>
-          <div class="col-sm-2"></div>
+          <div className="col-sm-2"></div>
         </div>
         <div className="container text-center pt-3">
-          <div class="row  ">
-            <div class="col-md-9"></div>
-            <div class="col-md d-flex justify-content-end">
+          <div className="row  ">
+            <div className="col-md-9"></div>
+            <div className="col-md d-flex justify-content-end">
               <button
-                class="btn"
+                className="btn"
                 type="submit"
                 id="liveToastBtn"
                 style={BgColor}
+                onClick={handleSubmit}
               >
                 Submit
               </button>
             </div>
-            <div class="col"></div>
+            <div className="col"></div>
           </div>
         </div>
       </div>
