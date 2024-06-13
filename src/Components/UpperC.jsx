@@ -7,18 +7,20 @@ export default function UpperC() {
   return (
     <div>
       <div className="container-flex">
-        <img
-          src="Img/24-Spring-HP-Banners-Duffels-Desktop_1440x526.webp"
-          alt="Wallpaper"
-          width="100%"
-          className="Imgme"
-        />
-        <div class="centered text-center">
-          <h4 class="TextColor">Spring Essentials</h4>
-          <p className="COlor">Duffel bags, tents, packs, and more!</p>
-          <Link to="/Quechua">
-            <button class="btn-prim">Shop Now</button>
-          </Link>
+        <div className="position-relative">
+          <img
+            src="Img/24-Spring-HP-Banners-Duffels-Desktop_1440x526.webp"
+            alt="Wallpaper"
+            width="100%"
+            className="Imgme"
+          />
+          <div class="centered-div text-center">
+            <h4 class="TextColor">Spring Essentials</h4>
+            <p className="COlor">Duffel bags, tents, packs, and more!</p>
+            <Link to="/Quechua">
+              <button class="btn-prim">Shop Now</button>
+            </Link>
+          </div>
         </div>
       </div>
       <Routes>
