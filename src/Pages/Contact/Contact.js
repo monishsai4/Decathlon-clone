@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import Footer from "../../Components/Footer";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+// ------------------------------------------------------------------------
+
+// ------------------------------------------------------------------------
 
 export default function Contact() {
   // Using samefile styles
@@ -22,6 +28,10 @@ export default function Contact() {
   const padm = {
     height: "200px",
   };
+  // ------------------------------------------------------------
+
+  // ------------------------------------------------------------
+
   //  Using emailjs for email submittion initialising the function
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -39,18 +49,23 @@ export default function Contact() {
       message: message,
       to_name: "Decathlon",
     };
-    emailjs
-      .send(serviceId, publicId, templateParams, publicKey)
-      .then((response) => {
-        console.log("email sent successfully", response);
-        setEmail("");
-        setMessage("");
-        setName("");
-        setNumber("");
-      })
-      .catch((error) => {
-        console.error("Error sending email", error);
-      });
+    if (name === "" || email === "" || number === "" || message === "") {
+      toast.warn("Enter all fields!");
+    } else {
+      emailjs
+        .send(serviceId, publicId, templateParams, publicKey)
+        .then((response) => {
+          console.log("email sent successfully", response);
+          toast.success("Message submitted!");
+          setEmail("");
+          setMessage("");
+          setName("");
+          setNumber("");
+        })
+        .catch((error) => {
+          console.error("Error sending email", error);
+        });
+    }
   };
   return (
     <>
@@ -72,7 +87,6 @@ export default function Contact() {
         </div>
         <div className="row mt-4">
           <div className="col-2"></div>
-
           <div className="col-md">
             <input
               className="form-control"
@@ -82,7 +96,8 @@ export default function Contact() {
               onChange={(e) => setName(e.target.value)}
               aria-label="default input example"
             />
-          </div>
+          </div>{" "}
+          <br />
           <div className="col-md">
             <input
               className="form-control"
@@ -93,6 +108,7 @@ export default function Contact() {
               aria-label="default input example"
             />
           </div>
+          <br />
           <div className="col-md">
             <input
               className="form-control"
@@ -103,6 +119,7 @@ export default function Contact() {
               aria-label="default input example"
             />
           </div>
+          <br />
           <div className="col-md-2"></div>
         </div>
         <div className="row mt-3">
@@ -126,12 +143,13 @@ export default function Contact() {
               <button
                 className="btn"
                 type="submit"
-                id="liveToastBtn"
+                id="toastbtn"
                 style={BgColor}
                 onClick={handleSubmit}
               >
                 Submit
               </button>
+              <ToastContainer />
             </div>
             <div className="col"></div>
           </div>

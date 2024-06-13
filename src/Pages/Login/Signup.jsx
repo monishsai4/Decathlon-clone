@@ -1,12 +1,19 @@
-import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
-
-import Login from "./Login";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Signup() {
+  const [number, setNumber] = useState("");
+  const handleKeyPress = (e) => {
+    if (!/[0-9]/.test(e.key)) {
+      e.preventDefault();
+    }
+  };
+
+  const handleChange = (e) => {
+    setNumber(e.target.value);
+  };
   return (
     <>
-      <h1>Hello</h1>
       <div>
         <div className="container-flex">
           <div className="row">
@@ -26,7 +33,7 @@ export default function Signup() {
                     <div className="col-md-2"></div>
                     <div className="col-md-8">
                       <h3>SignUp</h3>
-                      <p>Create your decathlon account here</p>
+                      <p>Create your Decathlon account here</p>
                       <div class="container-flex">
                         <div class="row">
                           <div class="col">
@@ -37,10 +44,13 @@ export default function Signup() {
                               Enter your Phone Number
                             </label>
                             <input
-                              type="number"
+                              type="text"
                               className="form-control"
                               id="formGroupExampleInput"
                               placeholder="Number"
+                              value={number}
+                              onChange={handleChange}
+                              onKeyPress={handleKeyPress}
                             />
                           </div>
                           <div class="col">
@@ -70,7 +80,7 @@ export default function Signup() {
                             color: "#fff",
                           }}
                         >
-                          Login
+                          SignUp
                         </button>
                       </div>
                       <p className="mt-4">Social login</p>
@@ -129,9 +139,6 @@ export default function Signup() {
           </div>
         </div>
       </div>
-      <Routes>
-        <Route path="/Login" element={<Login />} />
-      </Routes>
     </>
   );
 }

@@ -8,6 +8,7 @@ import Btwin from "./Pages/Product/Btwin";
 import Quechua from "./Pages/Product/Quechua";
 import Kiprun from "./Pages/Product/Kiprun";
 import Domyos from "./Pages/Product/Domyos";
+import Signup from "../src/Pages/Login/Signup";
 
 import "./App.css";
 import AOS from "aos";
@@ -115,6 +116,7 @@ export default function App() {
         <Route path="/Quechua" element={<Quechua />} />
         <Route path="/Domyos" element={<Domyos />} />
         <Route path="/Kiprun" element={<Kiprun />} />
+        <Route path="/Signup" element={<Signup />} />
       </Routes>
     </>
   );

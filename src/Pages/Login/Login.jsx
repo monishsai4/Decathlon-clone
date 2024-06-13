@@ -1,9 +1,17 @@
-import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
-
-import Signup from "./Signup";
+import { React, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Login() {
+  const [number, setNumber] = useState("");
+  const handleKeyPress = (e) => {
+    if (!/[0-9]/.test(e.key)) {
+      e.preventDefault();
+    }
+  };
+
+  const handleChange = (e) => {
+    setNumber(e.target.value);
+  };
   return (
     <>
       <div>
@@ -25,7 +33,7 @@ export default function Login() {
                     <div className="col-md-2"></div>
                     <div className="col-md-8">
                       <h3>Login</h3>
-                      <p>Go to your decathlon account here</p>
+                      <p>Go to your Decathlon account here</p>
                       <div class="container-flex">
                         <div class="row">
                           <div class="col">
@@ -36,10 +44,13 @@ export default function Login() {
                               Enter your Phone Number
                             </label>
                             <input
-                              type="number"
+                              type="text"
                               className="form-control"
                               id="formGroupExampleInput"
                               placeholder="Number"
+                              value={number}
+                              onChange={handleChange}
+                              onKeyPress={handleKeyPress}
                             />
                           </div>
                           <div class="col">
@@ -129,9 +140,6 @@ export default function Login() {
           </div>
         </div>
       </div>
-      <Routes>
-        <Route path="/Signup" element={<Signup />} />
-      </Routes>
     </>
   );
 }
