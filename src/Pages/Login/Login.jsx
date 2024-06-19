@@ -18,13 +18,15 @@ export default function Login() {
         <div className="container-flex">
           <div className="row">
             <div className="col-md">
-              <img
-                src="Img/Loginf1.avif"
-                height="120%"
-                width="102%"
-                alt="DecathlonLogo"
-                className="d-inline-block align-text-top"
-              />
+              <div data-aos="fade-right">
+                <img
+                  src="Img/Loginf1.avif"
+                  height="120%"
+                  width="102%"
+                  alt="DecathlonLogo"
+                  className="d-inline-block align-text-top"
+                />
+              </div>
             </div>
             <div className="col-md">
               <div className="container">

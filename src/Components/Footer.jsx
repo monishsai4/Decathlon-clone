@@ -64,21 +64,46 @@ export default function Footer() {
         <div class="col">
           <div className="DisplayFlex">
             <div className="DisplayPadding">
-              <img
-                src="Img/I1.png"
-                width="26px"
-                height="26px"
-                alt="instagram"
-              />
+              <a href="https://www.instagram.com/decathlonsportsindia/">
+                <img
+                  src="Img/I1.png"
+                  width="26px"
+                  height="26px"
+                  alt="instagram"
+                />
+              </a>
             </div>
             <div className="DisplayPadding">
-              <img src="Img/F1.png" width="26px" height="26px" alt="facebook" />
+              <a href="https://www.facebook.com/decathlonindia">
+                {" "}
+                <img
+                  src="Img/F1.png"
+                  width="26px"
+                  height="26px"
+                  alt="facebook"
+                />
+              </a>
             </div>
             <div className="DisplayPadding">
-              <img src="Img/T1.png" width="26px" height="26px" alt="twitter" />
+              <a href="https://x.com/Decathlon_India">
+                <img
+                  src="Img/T1.png"
+                  width="26px"
+                  height="26px"
+                  alt="twitter"
+                />
+              </a>
             </div>
             <div className="DisplayPadding">
-              <img src="Img/Y1.png" width="26px" height="26px" alt="youtube" />
+              <a href="https://www.youtube.com/@decathlon_india">
+                {" "}
+                <img
+                  src="Img/Y1.png"
+                  width="26px"
+                  height="26px"
+                  alt="youtube"
+                />
+              </a>
             </div>
             <div className="DisplayPadding">
               <p>

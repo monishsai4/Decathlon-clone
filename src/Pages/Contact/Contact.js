@@ -10,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   // Using samefile styles
+
   const Carousme = {
     backgroundColor: "#3543BA",
     width: "100%",
@@ -102,6 +103,7 @@ export default function Contact() {
             <input
               className="form-control"
               type="number"
+              id="number1"
               value={number}
               onChange={(e) => setNumber(e.target.value)}
               placeholder="Your phone number"
